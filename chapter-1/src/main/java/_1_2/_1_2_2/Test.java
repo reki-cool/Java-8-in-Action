@@ -153,5 +153,7 @@ public class Test {
 		
 		// 使用这种方式来筛选苹果，就不用写很多个 filterXXXApples 的筛选方法了;
 		// 只需要根据条件定义不同的 isXXXApple 方法，然后将它们的内部代码通过谓词的形式传递进去判断;
+
+		// 仍然有疑惑，可以参考：https://github.com/reki-cool/Java-8-in-Action/tree/master/chapter-1/src/main/java/_1_2 下的README.md文档
 	}
 }
