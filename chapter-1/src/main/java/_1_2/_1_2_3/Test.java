@@ -124,5 +124,7 @@ public class Test {
 		heavyApples = Apple.filterApples(apples, (Apple apple) -> apple.getWeight() > 150);
 		// 注意，这里也是一样地利用了谓词来传递代码，这次传递的是Lambda（匿名函数），而不是传递方法引用了；
 		// "（Apple apple)" 相当于要传递的方法引用的参数列表，"->"后面跟随的是只需要使用一次的判断条件
+
+		// 小总结：传递Lambda（匿名函数）的方式相比传递方法引用，就有点像将“方法”的核心代码直接单独拿出来传递
 	}
 }
