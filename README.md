@@ -7,4 +7,5 @@
 2.3 [行为参数化](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-2/src/main/java/_2_3/FilteringApples.java)    
 2.3.2 [行为参数化的大前提下使用匿名内部类传参](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-2/src/main/java/_2_3/_2_3_2/FilteringApples.java)    
 2.3.3 [行为参数化的大前提下使用Lambda表达式传参](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-2/src/main/java/_2_3/_2_3_3/FilteringApples.java)    
-2.3.4 [行为参数化的大前提下使用Lambda表达式传参并对List类型抽象化突破类型限制](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-2/src/main/java/_2_3/_2_3_4/FilteringApples.java)    
+2.3.4 [行为参数化的大前提下使用Lambda表达式传参并对List类型抽象化突破类型限制](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-2/src/main/java/_2_3/_2_3_4/Filtering.java)    
+2.4.1 [行为参数化案例一：用ComParator排序](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-2/src/main/java/_2_4/_2_4_1/Filtering.java)    
