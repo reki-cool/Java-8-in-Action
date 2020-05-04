@@ -1,3 +1,3 @@
-# µÚÒ»ÕÂ  
-1.2.1 [½«·½·¨×÷ÎªÒ»µÈ¹«Ãñ£º½«·½·¨×÷ÎªÖµ´«µİ¸ø·½·¨](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-1/src/main/java/_1_2/_1_2_1/Test.java)  
-1.2.2 [´«µİ´úÂë£ºÀûÓÃÎ½´Ê´«µİ´úÂë£¬À´É¸Ñ¡Æ»¹û](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-1/src/main/java/_1_2/_1_2_2/Test.java)  
+# ç¬¬ä¸€ç«   
+1.2.1 [å°†æ–¹æ³•ä½œä¸ºä¸€ç­‰å…¬æ°‘ï¼šå°†æ–¹æ³•ä½œä¸ºå€¼ä¼ é€’ç»™æ–¹æ³•](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-1/src/main/java/_1_2/_1_2_1/Test.java)  
+1.2.2 [ä¼ é€’ä»£ç ï¼šåˆ©ç”¨è°“è¯ä¼ é€’ä»£ç ï¼Œæ¥ç­›é€‰è‹¹æœ](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-1/src/main/java/_1_2/_1_2_2/Test.java)  
