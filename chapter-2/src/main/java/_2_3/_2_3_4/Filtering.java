@@ -56,9 +56,9 @@ interface ApplePredicate<T>{
     boolean test (T t);
 }
 
-public class FilteringApples<T> {
+public class Filtering<T> {
     // 静态泛型方法需要泛化，参考：https://blog.csdn.net/ruan130/article/details/23607571
-    public static <T> List<T> filterApples(List<T> list, ApplePredicate<T> p) {
+    public static <T> List<T> filter(List<T> list, ApplePredicate<T> p) {
         List<T> result = new ArrayList<>();
         for (T t: list) {
             // 注意这行代码
@@ -76,7 +76,7 @@ public class FilteringApples<T> {
         apples.add(new Apple("red", 150));
 
         // 筛选绿苹果
-        List<Apple> greenApples = filterApples(apples, (Apple apple) -> "green".equals(apple.getColor()));
+        List<Apple> greenApples = filter(apples, (Apple apple) -> "green".equals(apple.getColor()));
 
         List<Integer> numbers = new ArrayList<>();
         numbers.add(1);
@@ -85,6 +85,6 @@ public class FilteringApples<T> {
         numbers.add(4);
 
         // 筛选偶数
-        List<Integer> heavyApples = filterApples(numbers, (Integer i) -> i % 2 == 0);
+        List<Integer> evenNumbers = filter(numbers, (Integer i) -> i % 2 == 0);
     }
 }
