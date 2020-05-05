@@ -17,6 +17,7 @@ public class DoRunnable {
 
         // 使用匿名内部类写法
         Thread t = new Thread(new Runnable() {
+            @Override
             public void run() {
                 System.out.println("Hello world");
             }
