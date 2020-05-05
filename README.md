@@ -10,3 +10,5 @@
 2.3.4 [行为参数化的大前提下使用Lambda表达式传参并对List类型抽象化突破类型限制（再优化）](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-2/src/main/java/_2_3/_2_3_4/Filtering.java)    
 2.4.1 [行为参数化案例一：用ComParator排序](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-2/src/main/java/_2_4/_2_4_1/Filtering.java)    
 2.4.2 [行为参数化案例二：用Runnable执行代码块](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-2/src/main/java/_2_4/_2_4_2/DoRunnable.java)    
+# 第三章  
+3.1 [Lambda表达式定义 && 语法 && 常见Lambda表达式案例](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-3/src/main/java/_3_1/LambdaTemplate.java)    
