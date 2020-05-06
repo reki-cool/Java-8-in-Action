@@ -9,6 +9,7 @@ out
 gen
 target
 *.class
+classes
 
 # eclipse
 .settings
