@@ -15,3 +15,5 @@
 3.2.1 [在函数式接口上使用Lambda表达式](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-3/src/main/java/_3_2/_3_2_1/WhereToUseLambda.java)    
 3.2.2 [在函数描述符上使用Lambda表达式](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-3/src/main/java/_3_2/_3_2_2/WhereToUseLambda2.java)    
 3.3 [环绕执行模式下：利用Lambda表达式让执行行为多样化](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-3/src/main/java/_3_3/ResourceHandling.java)    
+3.4 [JAVA API 中几个常见的函数式接口用法](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-3/src/main/java/_3_4/CommonFunctionalInterfacesInJavaAPI.java)    
+3.4 [Java API 中常用函数式接口 、原始类型特化 以及 小练习](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-3/src/main/java/_3_4/README.md)    
