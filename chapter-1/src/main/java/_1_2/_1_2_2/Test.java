@@ -163,9 +163,15 @@ public class Test {
 		 *     而谓词 Predicate<Apple> p 这里也是接受Apple参数，并返回一个 boolean（true/false) 给 filterApples
 		 *     虽然使用 filterApples(List<Apple> inventory, Boolean isCondition) 看起来似乎简单明了
 		 *     但是使用谓词 filterApples(List<Apple> inventory, Predicate<Apple> p)  更标准
+		 */
+
+		/** 如果比较难以理解
+		 * 	这里可以参考		3.2.2函数描述符 将 Lambda表达式 赋值给一个签名相同的函数式接口变量
+		 * 	还可以参考		3.3 环绕执行模式下：利用Lambda表达式让执行行为多样化
 		 *
-		 *
-		 * 	这里可以参考  “3.2.2函数描述符” 将 Lambda表达式 赋值给一个签名相同的函数式接口变量，应该是与之同理，所以可以使用方法引用
+		 * 	这里虽然不是使用Lambda表达式，但是方法引用也是相似的东西，
+		 * 	都是传递行为，只不过方法引用使用的前提还是需要额外定义方法，
+		 * 	对于一些永久只用一次的行为，单独定义为一个方法，实际上是一种浪费
 		 */
 	}
 }
