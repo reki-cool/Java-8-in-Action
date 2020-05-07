@@ -155,5 +155,17 @@ public class Test {
 		// 只需要根据条件定义不同的 isXXXApple 方法，然后将它们的内部代码通过谓词的形式传递进去判断;
 
 		// 仍然有疑惑，可以参考：https://github.com/reki-cool/Java-8-in-Action/tree/master/chapter-1/src/main/java/_1_2 下的README.md文档
+
+
+		/**
+		 *  这里 isGreenApple 和 isHeavyApple 方法为什么能够作为参数传递给Predicate<Apple> p 这个参数？
+		 *     因为这两个方法接受Apple参数，并返回一个 boolean（true/false) 给 filterApples
+		 *     而谓词 Predicate<Apple> p 这里也是接受Apple参数，并返回一个 boolean（true/false) 给 filterApples
+		 *     虽然使用 filterApples(List<Apple> inventory, Boolean isCondition) 看起来似乎简单明了
+		 *     但是使用谓词 filterApples(List<Apple> inventory, Predicate<Apple> p)  更标准
+		 *
+		 *
+		 * 	这里可以参考  “3.2.2函数描述符” 将 Lambda表达式 赋值给一个签名相同的函数式接口变量，应该是与之同理，所以可以使用方法引用
+		 */
 	}
 }
