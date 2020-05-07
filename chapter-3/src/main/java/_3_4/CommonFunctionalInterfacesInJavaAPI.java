@@ -85,17 +85,14 @@ public class CommonFunctionalInterfacesInJavaAPI {
         Predicate<String> nonEmptyStringPredicate = (String s) -> !s.isEmpty();
         List<String> nonEmpty = filter(listOfStrings, nonEmptyStringPredicate);
 
-        Predicate<Integer> evenInteger = (Integer i) -> i % 2 == 0;
         // 注意这里直接调用谓词的test方法，其它的函数式接口也可以如此使用
-        boolean even = evenInteger.test(10000);    // 这里进行了装箱|操作  10000(int) -> Integer(10000)，即 原始类型的特化
+        Predicate<Integer> evenInteger = (Integer i) -> i % 2 == 0;
+        boolean even = evenInteger.test(10000);    // 这里进行了装箱|操作  10000(int) -> Integer(10000)
         System.out.println(even); // true
 
-
         IntPredicate oddInteger = (int i) -> i % 2 == 1;
-        // 注意这里直接调用谓词的test方法，其它的函数式接口也可以如此使用
         boolean odd = oddInteger.test(10000);    // 这里没有进行装箱操作  10000 本就是 int 原始类型
         System.out.println(odd); // false
-
 
 
         // 消费者使用
