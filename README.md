@@ -14,3 +14,4 @@
 3.1 [Lambda表达式定义 && 语法 && 常见Lambda表达式案例](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-3/src/main/java/_3_1/LambdaTemplate.java)    
 3.2.1 [在函数式接口上使用Lambda表达式](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-3/src/main/java/_3_2/_3_2_1/WhereToUseLambda.java)    
 3.2.2 [在函数描述符上使用Lambda表达式](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-3/src/main/java/_3_2/_3_2_2/WhereToUseLambda2.java)    
+3.3 [环绕执行模式下：利用Lambda表达式让执行行为多样化](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-3/src/main/java/_3_3/ResourceHandling.java)    
