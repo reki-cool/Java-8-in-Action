@@ -37,6 +37,7 @@ Lambda需要的目标类型就是： Predicate<Apple>
  第四，test方法描述了一个函数描述符，它可以接受一个Apple，并返回一个boolean。
  最后，filter的任何实际参数都必须匹配这个要求。
 ```    
+```text
 总结一下它的核心步骤：   
 1、找到使用Lambda表达式 (Apple a) -> a.getWeight() > 150 的上下文为 Predicate<Apple> p    
 2、由1可知目标类型为Predicate<Apple>  
@@ -44,5 +45,7 @@ Lambda需要的目标类型就是： Predicate<Apple>
 4、判断所使用的Lambda表达式的签名为：(Apple) -> boolean  
 5、目标类型的函数描述符与所使用的的Lambda表达式的签名完全一致，所以类型检查通过。  
 其实问题最终又回到了：_3_2._3_2_2.WhereToUseLambda2 —— 在函数描述符上使用Lambda
+```
+
 -----
 
