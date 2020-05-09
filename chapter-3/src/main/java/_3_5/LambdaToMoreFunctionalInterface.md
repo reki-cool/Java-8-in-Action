@@ -20,4 +20,7 @@ Lambda签名为: (String) -> boolean;
 Predicate<String> p = s -> list.add(s);
 // Consumer返回了一个void（此时使用的是特殊的void兼容规则）
 Consumer<String> b = s -> list.add(s);
-```
+```  
+对我来说，  
+就是只要Lambda签名中参数列表与返回类型为void的函数描述符中的参数列表一致，  
+那么无论这个Lambda的签名返回类型是啥，都可以将它传递给这个返回类型为void的函数描述符  
