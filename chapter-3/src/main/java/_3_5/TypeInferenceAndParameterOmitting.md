@@ -12,40 +12,20 @@ Comparator<Apple> c = (a1, a2) -> a1.getWeight().compareTo(a2.getWeight());
 Predicate<Apple> p = a -> a.getWeight() > 150;
 ```
 
-## 在Lambda的主体中使用外部变量限制是个final值  
-被Lambda主体使用的变量必须必须显式声明为final或事实上是final（只有第一次初始化的时候被赋值，之后它的值永远都没被改变过，无论他是否有被final关键字给修饰过）。  
-因为Lambda表达式只能捕获指派给它们的局部变量一次。
-
-### 错误案例
+## Lambda捕获的 局部变量 必须必须必须是final的！！！
+### final变量
+除了一开始被初始化赋值，后续不会再对其进行任何修改的变量
+### 捕获
+捕获是指在Lambda的主体内部使用不属于参数的外部变量
+### 错误案例（在方法中进行如下使用）
 ```text
+// 方法中定义如下代码，此时portNumber为局部变量
 int portNumber = 1337;
 Runnable r = () -> System.out.println(portNumber);
 portNumber = 31337; 
-
-在Lambda定义完后，又对被Lambda使用的这个变量进行重新赋值，说明这个变量不是final的。
 ```
-
-### 正确案例（注意与上面对比）
-```text
-int portNumber = 1337;
-Runnable r = () -> System.out.println(portNumber);
-// 之后没有对portNumber修改，即它永远只被使用一次，相当于是个final变量
-
-或
-
-final int portNumber = 1337;
-Runnable r = () -> System.out.println(portNumber);
-// 相比上面只是多加个final，看起来更加明显
-
-或
-
-int port = 1337;
-final int portNumber = port; // 或写成 int portNumber = port;
-Runnable r = () -> System.out.println(portNumber);
-port = 1000;
-// 这里的port虽然被重复赋值，但是被lambda使用的portNumber永久只被赋值一次，后续再没被修改过。
-```
-
-### 总结
-lambda使用其主体外的局部变量时，无论是实例变量（当前对象的变量）还是静态变量（当前类成员变量）或是方法内临时变量，  
-**务必在声明此变量时，加上final关键词进行修饰（看起来更加明显突出！！！）**
+## Lambda对于 实例变量 和 静态变量 可以无限制捕获
+思考一下，很好理解
+Lambda捕获实例变量之所以能够自由捕获，是因为这些实例变量都属于this的属性，  
+实际上Lambda还是有且只有一次的捕获了当前实例对象（this），所以能够无限制捕获该实例对象下的各个实例成员变量     
+对于静态变量同理。Lambda有且只有一次的捕获了当前类实例，所以能够无限制捕获该类实例下的各个类静态成员变量  
