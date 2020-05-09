@@ -19,3 +19,5 @@
 3.4 [Java API 中常用函数式接口 、原始类型特化 以及 小练习](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-3/src/main/java/_3_4/README.md)    
 3.4 [Lambda表达式的异常处理](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-3/src/main/java/_3_4/LambdasWithException.java)    
 3.5 [Lambda类型检查（系统怎样判断你使用的Lambda类型是否正确？）](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-3/src/main/java/_3_5/README.md)    
+3.5 [函数描述符兼容Lambda表达式的规则](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-3/src/main/java/_3_5/LambdaToMoreFunctionalInterface.md)    
+3.5 [Lambda类型推断和参数类型省略](https://github.com/reki-cool/Java-8-in-Action/blob/master/chapter-3/src/main/java/_3_5/TypeInferenceAndParameterOmitting.md)    
